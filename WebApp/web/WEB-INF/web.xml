@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <context-param>
+        <param-name>param-name</param-name>
+        <param-value>param-value</param-value>
+    </context-param>
+    <servlet>
+        <!--<init-param>-->
+        <!--<param-name>namespace</param-name>-->
+        <!--<param-value>value</param-value>-->
+        <!--</init-param>-->
+
+        <servlet-name>login</servlet-name>
+        <servlet-class>com.zrx.servlet.LoginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>login</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>count</servlet-name>
+        <servlet-class>com.zrx.servlet.CountServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>count</servlet-name>
+        <url-pattern>/CountServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ClassServlet</servlet-name>
+        <servlet-class>com.zrx.servlet.ClassServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ClassServlet</servlet-name>
+        <url-pattern>/ClassServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
